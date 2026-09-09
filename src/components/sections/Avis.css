@@ -1,0 +1,59 @@
+.section-avis {
+  background: var(--anthracite);
+  padding: 100px 0;
+}
+
+.avis-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.avis-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(196, 144, 95, 0.15);
+  border-radius: 8px;
+  padding: 32px;
+  position: relative;
+}
+
+.avis-stars {
+  color: var(--gold);
+  font-size: 18px;
+  letter-spacing: 4px;
+  margin-bottom: 16px;
+}
+
+.avis-text {
+  font-family: var(--font-body);
+  font-size: 17px;
+  color: var(--cream);
+  font-style: italic;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  opacity: 0.85;
+}
+
+.avis-author {
+  font-family: var(--font-display);
+  font-size: 16px;
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.avis-quote {
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  font-family: var(--font-display);
+  font-size: 64px;
+  color: var(--gold);
+  opacity: 0.15;
+  line-height: 1;
+}
+
+@media (max-width: 1024px) {
+  .avis-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,19 @@
+.ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+.ornament-line {
+  flex: 1;
+  height: 1px;
+  background: var(--gold);
+}
+
+.ornament-symbol {
+  color: var(--gold);
+  font-size: 18px;
+}

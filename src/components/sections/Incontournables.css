@@ -1,0 +1,71 @@
+.section-incontournables {
+  background: var(--bordeaux);
+  padding: 100px 0;
+  position: relative;
+}
+
+.incontournables-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.incontournable-card {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(196, 144, 95, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.incontournable-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--gold);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
+}
+
+.incontournable-card-image {
+  height: 220px;
+  overflow: hidden;
+}
+
+.incontournable-card:hover .incontournable-card-image img {
+  transform: scale(1.06);
+}
+
+.incontournable-card-content {
+  padding: 24px 16px;
+}
+
+.incontournable-card-content h3 {
+  font-family: var(--font-display);
+  font-size: 18px;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+
+.incontournable-card-content p {
+  font-size: 15px;
+  color: var(--cream);
+  opacity: 0.7;
+  line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+  .incontournables-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .incontournables-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .incontournable-card-image {
+    height: 180px;
+  }
+}

@@ -1,0 +1,68 @@
+.section-histoire {
+  background: var(--cream);
+  padding: 100px 0;
+}
+
+.histoire-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.histoire-image {
+  position: relative;
+}
+
+.histoire-image::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: -20px;
+  bottom: -20px;
+  border: 2px solid var(--gold);
+  border-radius: 4px;
+  z-index: -1;
+}
+
+.histoire-text h2 {
+  font-family: var(--font-display);
+  font-size: 42px;
+  color: var(--anthracite-dark);
+  margin-bottom: 24px;
+}
+
+.histoire-text h2 span {
+  color: var(--bordeaux);
+}
+
+.histoire-text p {
+  font-size: 18px;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.histoire-signature {
+  font-family: var(--font-display);
+  font-style: italic;
+  color: var(--bordeaux);
+  font-size: 22px;
+  margin-top: 24px;
+}
+
+@media (max-width: 768px) {
+  .histoire-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .histoire-image::after {
+    display: none;
+  }
+
+  .histoire-text h2 {
+    font-size: 30px;
+  }
+}
